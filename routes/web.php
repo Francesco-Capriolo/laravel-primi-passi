@@ -19,30 +19,29 @@ Route::get('/', function () {
     [
         [
             'name'=>'primi',
-            'url' => 'primi',
+            'url' => 'desio',
         ],
         [
             'name'=>'passi',
-            'url' => 'passi',
+            'url' => 'casio',
         ],
         [
             'name'=>'in Laravel',
-            'url' => 'laravel',
+            'url' => 'lara',
         ],
     ]
 ];
-    dump($data);
     return view('home', $data);
 });
 
 Route::get('/primi', function () {
     return view('primi');
-})->name('primi');
+})->name('desio');
 
 Route::get('/passi', function () {
     return view('passi');
-})->name('passi');
+})->name('casio');
 
 Route::get('/laravel', function () {
     return view('laravel');
-})->name('laravel');
+})->name('lara');

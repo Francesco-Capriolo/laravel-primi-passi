@@ -49,7 +49,7 @@
 
                 <div class="links">
                     @foreach ($lista as $item)
-                        <a href="{{url($item['url'])}}">{{$item['name']}}</a>
+                        <a href="{{route($item['url'])}}">{{$item['name']}}</a>
                     @endforeach
 
                 </div>
